@@ -5,6 +5,7 @@ module Goodreads
     end
 
     def run
+      # An expensive process
       sleep(2)
 
       [
