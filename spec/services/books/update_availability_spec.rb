@@ -3,8 +3,8 @@ require 'rails_helper'
 describe Books::UpdateAvailability, type: :service do
   describe '.run' do
     # On average, it takes 14 seconds.
-    context 'let! and multiple examples' do
-      let!(:book) do
+    context 'multiple examples' do
+      let(:book) do
         # An expensive process
         sleep(2)
 
@@ -23,7 +23,7 @@ describe Books::UpdateAvailability, type: :service do
     end
 
     # On average, it takes 7 seconds.
-    context 'let! and a single example' do
+    context 'a single example' do
       let(:book) do
         # An expensive process
         sleep(2)
